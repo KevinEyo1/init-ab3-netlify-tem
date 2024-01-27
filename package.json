@@ -4,8 +4,8 @@
   "description": "AB-3 docs",
   "scripts": {
     "init": "markbind init",
-    "build": "markbind build",
-    "serve": "markbind serve",
+    "build": "markbind build docs",
+    "serve": "markbind serve docs",
     "deploy": "markbind deploy"
   },
   "devDependencies": {

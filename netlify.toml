@@ -1,5 +1,5 @@
 [build]
   base    = "/"
-  publish = "your_site/_site"
+  publish = "docs/_site"
   command = "npm run build"
   environment = { NPM_FLAGS = "--global-style", NODE_VERSION = "16.19.1" }
