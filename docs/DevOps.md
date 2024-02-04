@@ -11,6 +11,10 @@
 
 <!-- -------------------------------------------------------------------------------------------------------------------- -->
 
+<box type="tip">
+This page can be used to understand the DevOps practices adopted by the project.
+</box>
+
 ## Build automation
 
 This project uses Gradle for **build automation and dependency management**. **You are recommended to read [this Gradle Tutorial from the se-edu/guides](https://se-education.org/guides/tutorials/gradle.html)**.

@@ -3,11 +3,15 @@
   title: "John Doe's Project Portfolio Page"
 ---
 
-### Project: AddressBook Level 3
+### Project: ProjectEx
 
-AddressBook - Level 3 is a desktop address book application used for teaching Software Engineering principles. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC.
+ProjectEx is an example project application used for showcasing a default MarkBind template specifically for project domentaion. It can be taken as a reference for users to base their own MarkBind sites off of.
 
-Given below are my contributions to the project.
+<box type="tip">
+    Content can be easily be replaced by with the user's project information and context.
+</box>
+
+Given below are my (example) contributions to the project.
 
 * **New Feature**: Added the ability to undo/redo previous commands.
   * What it does: allows the user to undo all previous commands one at a time. Preceding undo commands can be reversed by using the redo command.
@@ -17,7 +21,7 @@ Given below are my contributions to the project.
 
 * **New Feature**: Added a history command that allows the user to navigate to previous commands using up/down keys.
 
-* **Code contributed**: [RepoSense link]()
+* **Code contributed**: [Github repo]()
 
 * **Project management**:
   * Managed releases `v1.3` - `v1.5rc` (3 releases) on GitHub
@@ -36,8 +40,8 @@ Given below are my contributions to the project.
 * **Community**:
   * PRs reviewed (with non-trivial review comments): [\#12](), [\#32](), [\#19](), [\#42]()
   * Contributed to forum discussions (examples: [1](), [2](), [3](), [4]())
-  * Reported bugs and suggestions for other teams in the class (examples: [1](), [2](), [3]())
-  * Some parts of the history feature I added was adopted by several other class mates ([1](), [2]())
+  * Reported bugs and suggestions for other user contributions (examples: [1](), [2](), [3]())
+  * Some parts of the history feature I added was adopted by several other users ([1](), [2]())
 
 * **Tools**:
   * Integrated a third party library (Natty) to the project ([\#42]())

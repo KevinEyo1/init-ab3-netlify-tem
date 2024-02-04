@@ -10,6 +10,10 @@
 >
 > —  Antoine de Saint-Exupery
 
+<box type="tip">
+This page can be taken as a reference on a tutorial on how to remove components or functions from your project.
+</box>
+
 When working on an existing code base, you will most likely find that some features that are no longer necessary.
 This tutorial aims to give you some practice on such a code 'removal' activity by removing the `address` field from `Person` class.
 

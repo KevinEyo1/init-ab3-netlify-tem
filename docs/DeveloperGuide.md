@@ -4,7 +4,7 @@
   pageNav: 3
 ---
 
-# AB-3 Developer Guide
+# ProjectEx Developer Guide
 
 <!-- * Table of Contents -->
 <page-nav-print />
@@ -25,11 +25,15 @@ Refer to the guide [_Setting up and getting started_](SettingUp.md).
 
 ## **Design**
 
+<box type="tip">
+This section describes the architecture of your app, explaining how the main components work and interact with each other. Using acrhitecture diagrams is recommended.
+</box>
+
 ### Architecture
 
 <puml src="diagrams/ArchitectureDiagram.puml" width="280" />
 
-The ***Architecture Diagram*** given above explains the high-level design of the App.
+The ***Architecture Diagram*** given above explains the high-level design of the ProjectEx App.
 
 Given below is a quick overview of main components and how they interact with each other.
 
@@ -253,7 +257,7 @@ _{Explain here how the data archiving feature will be implemented}_
 
 --------------------------------------------------------------------------------------------------------------------
 
-## **Documentation, logging, testing, configuration, dev-ops**
+## **Project Guides**
 
 * [Documentation guide](Documentation.md)
 * [Testing guide](Testing.md)
@@ -269,13 +273,11 @@ _{Explain here how the data archiving feature will be implemented}_
 
 **Target user profile**:
 
-* has a need to manage a significant number of contacts
-* prefer desktop apps over other types
-* can type fast
-* prefers typing to mouse interactions
-* is reasonably comfortable using CLI apps
+* user needs
+* user preferences
+* user information
 
-**Value proposition**: manage contacts faster than a typical mouse/GUI driven app
+**Value proposition**: Benefit compared to other similar products
 
 
 ### User stories
@@ -284,39 +286,34 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 | Priority | As a …​                                    | I want to …​                 | So that I can…​                                                        |
 |----------|--------------------------------------------|------------------------------|------------------------------------------------------------------------|
-| `* * *`  | new user                                   | see usage instructions       | refer to instructions when I forget how to use the App                 |
-| `* * *`  | user                                       | add a new person             |                                                                        |
-| `* * *`  | user                                       | delete a person              | remove entries that I no longer need                                   |
-| `* * *`  | user                                       | find a person by name        | locate details of persons without having to go through the entire list |
-| `* *`    | user                                       | hide private contact details | minimize chance of someone else seeing them by accident                |
-| `*`      | user with many persons in the address book | sort persons by name         | locate a person easily                                                 |
+| `* * *`  | new user                                   | see something       | visualise something                 |
+| `* *`    | user                                       | do something | complete something                |
+| `*`      | user with specific information | sort something         | find something                                                 |
 
 *{More to be added}*
 
 ### Use cases
 
-(For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
+(For all use cases below, the **System** is the `ProjectEx` and the **Actor** is the `User`, unless specified otherwise)
 
-**Use case: Delete a person**
+**Use case: Do something**
 
 **MSS**
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
+1.  User requests ProjectEx
+2.  ProjectEx provides response
 
     Use case ends.
 
 **Extensions**
 
-* 2a. The list is empty.
+* 2a. Requests fails.
 
   Use case ends.
 
-* 3a. The given index is invalid.
+* 3a. User request is invalid.
 
-    * 3a1. AddressBook shows an error message.
+    * 3a1. ProjectEx shows an error message.
 
       Use case resumes at step 2.
 
@@ -326,14 +323,18 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 1.  Should work on any _mainstream OS_ as long as it has Java `11` or above installed.
 2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
-3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
 
 *{More to be added}*
 
 ### Glossary
 
+<box type="tip" seamless>
+
+**Tip:**
+This section can be used to define technical terms or concepts that are specific to the project.
+</box>
+
 * **Mainstream OS**: Windows, Linux, Unix, OS-X
-* **Private contact detail**: A contact detail that is not meant to be shared with others
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -352,33 +353,29 @@ testers are expected to do more *exploratory* testing.
 
 1. Initial launch
 
-   1. Download the jar file and copy into an empty folder
+   1. How to download the app
 
-   1. Double-click the jar file Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum.
+   1. How to run the app
 
-1. Saving window preferences
+1. Shutdown
 
-   1. Resize the window to an optimum size. Move the window to a different location. Close the window.
+   1. On close attempt, prompt to confirm closing will pop up
 
-   1. Re-launch the app by double-clicking the jar file.<br>
-       Expected: The most recent window size and location is retained.
+   1. Click confirm to close app
 
 1. _{ more test cases …​ }_
 
-### Deleting a person
+### Feature X
 
-1. Deleting a person while all persons are being shown
+1. Using Feature X
 
-   1. Prerequisites: List all persons using the `list` command. Multiple persons in the list.
+   1. Prerequisites to use feature.
 
-   1. Test case: `delete 1`<br>
-      Expected: First contact is deleted from the list. Details of the deleted contact shown in the status message. Timestamp in the status bar is updated.
+   1. Test case: Do something with feature X
+      Expected: Visual output or change after test.
 
-   1. Test case: `delete 0`<br>
-      Expected: No person is deleted. Error details shown in the status message. Status bar remains the same.
-
-   1. Other incorrect delete commands to try: `delete`, `delete x`, `...` (where x is larger than the list size)<br>
-      Expected: Similar to previous.
+   1. Test case: Do something else with feature X
+      Expected: Error pops up.
 
 1. _{ more test cases …​ }_
 

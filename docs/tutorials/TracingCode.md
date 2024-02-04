@@ -11,6 +11,11 @@
 >
 > —  Robert C. Martin Clean Code: A Handbook of Agile Software Craftsmanship
 
+
+<box type="tip">
+This page can be taken as a reference on a tutorial on how to trace the execution path of a user command through the code base of the App.
+</box>
+
 When trying to understand an unfamiliar code base, one common strategy used is to trace some representative execution path through the code base. One easy way to trace an execution path is to use a debugger to step through the code. In this tutorial, you will be using the IntelliJ IDEA’s debugger to trace the execution path of a specific user command.
 
 <!-- * Table of Contents -->

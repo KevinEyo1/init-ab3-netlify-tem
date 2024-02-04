@@ -3,17 +3,19 @@
   title: ""
 ---
 
-# AddressBook Level-3
+# ProjectEx
 
-[![CI Status](https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg)](https://github.com/se-edu/addressbook-level3/actions)
-[![codecov](https://codecov.io/gh/se-edu/addressbook-level3/branch/master/graph/badge.svg)](https://codecov.io/gh/se-edu/addressbook-level3)
+[![CI Status](https://github.com/MarkBind/markbind/workflows/CI/badge.svg)](https://github.com/MarkBind/markbind/actions)
+[![codecov](https://codecov.io/gh/MarkBind/markbind/branch/master/graph/badge.svg)](https://codecov.io/gh/MarkBind/markbind)
 
-![Ui](images/Ui.png)
+<box type="tip">
+Can insert your app's onboarding screen or representative picture here.
+</box>
 
-**AddressBook is a desktop application for managing your contact details.** While it has a GUI, most of the user interactions happen using a CLI (Command Line Interface).
+**ProjectEx is an example project application used for showcasing a default MarkBind template specifically for project domentaion.** 
 
-* If you are interested in using AddressBook, head over to the [_Quick Start_ section of the **User Guide**](UserGuide.html#quick-start).
-* If you are interested about developing AddressBook, the [**Developer Guide**](DeveloperGuide.html) is a good place to start.
+* If you are interested in using ProjectEx, head over to the [_Quick Start_ section of the **User Guide**](UserGuide.html#quick-start).
+* If you are interested about contributing to developing ProjectEx, the [**Developer Guide**](DeveloperGuide.html) is a good place to start.
 
 
 **Acknowledgements**
