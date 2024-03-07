@@ -11,6 +11,10 @@
 
 <!-- -------------------------------------------------------------------------------------------------------------------- -->
 
+<box type="tip">
+This section can be used to describe the requirements of the app, through the use of user stories, use cases.
+</box>
+
 ### Product scope
 
 **Target user profile**:
@@ -48,7 +52,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests ProjectEx
-2.  ProjectEx provides response
+1.  ProjectEx provides response
 
     Use case ends.
 
@@ -58,9 +62,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-* 3a. User request is invalid.
+* 2b. User request is invalid.
 
-    * 3a1. ProjectEx shows an error message.
+    * 2b1. ProjectEx shows an error message.
 
       Use case resumes at step 2.
 </panel>

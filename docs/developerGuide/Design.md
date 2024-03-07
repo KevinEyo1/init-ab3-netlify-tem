@@ -19,10 +19,10 @@ This section describes the architecture of your app, explaining how the main com
 
 The ***Architecture Diagram*** given below explains the high-level design of the ProjectEx App.
 
-{{ johnDoeVariable }}
+<puml src="../diagrams/example.puml" width=300 />
 <box type="info" seamless>
 
-Replace the above dummy `img` component with an Architecture Diagram of your project created using [`puml`](https://markbind.org/userGuide/components/imagesAndDiagrams.html#diagrams) feature.
+Replace the above example diagram with an Architecture Diagram of your project created using [`puml`](https://markbind.org/userGuide/components/imagesAndDiagrams.html#diagrams) feature.
 </box>
 
 Given below is a quick overview of main components and how they interact with each other.
@@ -38,7 +38,7 @@ The bulk of the app's work is done by the following components:
 
 The *Sequence Diagram* below shows how the components interact with each other for a certain scenario.
 
-<annotate src="images/johndoe.png" width="300" alt="Sample Image">
+<annotate src="../images/johndoe.png" width="300" alt="Sample Image">
   <!-- Minimal Point -->
   <a-point x="25%" y="25%" content="This point is 25% from the left and 25% from the top" />
   <!-- Customize Point Size (default size is 40px) -->
@@ -74,7 +74,7 @@ You can use a combination of Markbind's [**Diagrams**](https://markbind.org/user
 
 Component 1 is made up of parts e.g.`A`, `B`, `C` etc.
 
-{{ johnDoeVariable }}
+{{ placeholderImage }}
 <box type="info" seamless>
 Diagram of Component 1
 </box>
@@ -90,7 +90,7 @@ Component 1,
 **Note:** The lifeline in the sequence diagram should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
 </box>
 
-{{ johnDoeVariable }}
+{{ placeholderImage }}
 <box type="info" seamless>
 Diagram of Component 2
 </box>

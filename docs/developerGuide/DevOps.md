@@ -38,7 +38,7 @@ The following commands are examples. You can customize them according to your pr
 
 ## Continuous integration (CI)
 
-This project uses (GitHub Actions)[https://github.com/features/actions] for CI. The project comes with the necessary GitHub Actions configurations files (in the `.github/workflows` folder). No further setting up required.
+This project uses [GitHub Actions](https://github.com/features/actions) for CI. The project comes with the necessary GitHub Actions configurations files (in the `.github/workflows` folder). No further setting up required.
 
 ### Code coverage
 

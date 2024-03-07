@@ -6,7 +6,9 @@
 
 # Implementation
 
-This section describes some noteworthy details on how certain features are implemented.
+<box type="tip">
+This section can be used to describe some noteworthy details on how certain features are implemented.
+</box>
 
 ### \[Proposed\] FeatureX Implementation
 
